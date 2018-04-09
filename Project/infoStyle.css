@@ -87,6 +87,16 @@
 	align-items: center;
 }
 
+#rectangleGetQuote {
+	width: 136px;
+	height: 56px;
+	background: url(gallery/rectangleGetQuote.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: flex;
+	align-items: center;
+}
+
 #rectangleReadMore p {
 	color: #adadad;
 	cursor: pointer;
