@@ -1,0 +1,73 @@
+.infoContainer {
+	width: 100%;
+	height: 540px;
+	background: url(rectangleInfo.png);
+	/*NU UITA SA O FACI 1PX ALBA*/
+	border: 1px white solid;
+}
+	
+.container {
+	margin: 15px 0px 22px 0px;
+}
+
+.about {
+	text-align: center;
+	margin: 29px auto;
+	/*border: 2px green solid;*/
+	font-size: 16pt;
+	width: 1020px;
+}
+
+#aboutTitle {
+	font-size: 23pt;
+	text-align: center;
+}
+	
+.par {
+	text-align: center;
+}
+	
+.elipse {
+	margin: auto;
+	border-radius: 50%;
+	background-color:  #404041;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+		
+.icon {
+	margin: 0;
+}
+	
+.serviceDescription {
+	margin: -8px 0px 0px 0px;
+	height: 33px;
+	font-size: 16 pt;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.serviceTitle {
+	height: 71px;
+	color: rgb(37, 191, 236);
+	font-size: 18.16 pt;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.readmore {
+	height: 32px;
+	margin: 23px 0px 0px 0px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
