@@ -23,7 +23,7 @@
 	text-align: center;
 }
 
-.rectangleDialog img {
+.dialogImg {
 	height: 144px;
 }
 
@@ -144,4 +144,9 @@
 	font-weight: bold;
 	color: #848484;
 	font-size: 17px;
+}
+
+.qMarkDown, .qMarkUp {
+	width: 18px;
+	height: 14px;
 }

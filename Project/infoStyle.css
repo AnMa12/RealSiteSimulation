@@ -19,6 +19,7 @@
 
 #aboutTitle {
 	font-size: 30px;
+	width: 160px;
 	font-family: 'Maven Pro';
 	text-align: center;
 	color: #7c7c7c;
@@ -85,6 +86,19 @@
 	background-size: auto;
 	display: flex;
 	align-items: center;
+}
+
+#aboutHeader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#lineLeft, #lineRight {
+	width: 460px;
+	margin: 0px 24px;
+	height: 1px;
+	border-top: 1px solid #d1d1d1;
 }
 
 #rectangleGetQuote {
