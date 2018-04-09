@@ -1,0 +1,212 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="menuStyle.css">
+		<link rel="stylesheet" type="text/css" href="clientsStyle.css">
+		<link rel="stylesheet" type="text/css" href="infoStyle.css">
+		<link rel="stylesheet" type="text/css" href="galleryStyle.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<script type="text/javascript" src="galeryJS.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body>
+		<!-- MENU -->
+		<div class = "containerMenu">
+			<img id = "rectangleMenu" src="menu/menu.png" alt="menu">
+			<img id = "iconV3" src="menu/v3securityIcon.png" alt="v3securityIcon">
+			<img id = "iconBBB" src="menu/bbbIcon.png" alt="bbbIcon">
+			
+			<div class = "containerContact">
+				<div id = "rectanglePhone"> 
+					<p><span class="glyphicon glyphicon-earphone"></span> 916.543.1543</p>
+				</div>
+				<div id = "rectangleQuote"> 
+					<p>Get a free quote <span class="glyphicon glyphicon-chevron-down"></span></p>
+				</div>
+			</div>
+			
+			<ul id="realMenu">
+				<li id = "active">HOME<span class="glyphicon glyphicon-stop"></span></li>
+				<li>ABOUT US<span class="glyphicon glyphicon-stop"></span></li>
+				<li>V3 CARES<span class="glyphicon glyphicon-stop"></span></li>
+				<li>PRODUCTS<span class="glyphicon glyphicon-stop"></span></li>
+				<li>SERVICES<span class="glyphicon glyphicon-stop"></span></li>
+				<li>CONTACT</li>
+			</ul>  
+		</div>
+		<!-- MENU FIN -->
+	
+		<!-- GALERY -->
+		<div id = "rectangleBlue">
+			<p id = "titleBlue"> We are your <br> Neighbors </p>
+			<p id = "textBlue"> Fusce et orci leo. Nulla condimentum et magna sit amet rhoncus. 
+				Pellentesque dignissim mi non ipsum Suspendisse vulputate porta mi, 
+				non interdum metus tempus quis. Donec gravida, tortor aliquet consequat sagittis[...]</p>
+			<p id = "buttonBlue"> GET A FREE QUOTE </p>
+		</div>
+
+		<div class="slideshowContainer">
+			<div class="slidesDiv">
+				<img src="gallery/photoG1.png" style="width:100%">
+				<div class="dotsDiv">
+					<span class="dotSlide" onclick="currentSlide(1)"></span> 
+					<span class="dotSlide" onclick="currentSlide(2)"></span> 
+					<span class="dotSlide" onclick="currentSlide(3)"></span> 
+				</div>
+		</div>
+
+			<div class="slidesDiv">
+				<img src="gallery/photoG2.png" style="width:100%">
+				<div class="dotsDiv">
+					<span class="dotSlide" onclick="currentSlide(1)"></span> 
+					<span class="dotSlide" onclick="currentSlide(2)"></span> 
+					<span class="dotSlide" onclick="currentSlide(3)"></span> 
+				</div>
+			</div>
+
+			<div class="slidesDiv">
+				<img src="gallery/photoG3.png" style="width:100%">
+				<div class="dotsDiv">
+					<span class="dotSlide" onclick="currentSlide(1)"></span> 
+					<span class="dotSlide" onclick="currentSlide(2)"></span> 
+					<span class="dotSlide" onclick="currentSlide(3)"></span> 
+				</div>
+			</div>
+		</div>
+		<!-- GALERY FIN -->
+		
+		<!-- INFO -->
+		<div class = "infoContainer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md">
+						<div class = "elipse">
+							<img class = "icon" src = "info/settingsIcon.png" alt = "elipseIcon">
+						</div>
+						<p class = "serviceTitle">EASY TO USE EQUIPMENT</p> 
+						<p class = "serviceDescription">Pellentesque dignissim mi non ipsum vulputatultrices justo euismod. [..] </p>
+						<div id = "rectangleReadMore"> <p> Read More</p></div>
+					</div>
+					
+					<div class="col-md">
+						<div class = "elipse">
+							<img class = "icon" src = "info/phoneIcon.png" alt = "elipseIcon">
+						</div>
+						<p class = "serviceTitle">A SYSTEM YOU'LL ACTYALY USE</p>
+						<p class = "serviceDescription">Suspendisse vulputate porta mi, non <br> interdum metus tempus quis. [...] </p>					
+						<div id = "rectangleReadMore"> <p> Read More</p></div>
+					</div>
+					
+					<div class="col-md">
+						<div class = "elipse">
+							<img class = "icon" src = "info/newsIcon.png" alt = "elipseIcon">
+						</div>
+						<p class = "serviceTitle"> SAVE UP TO $20 A MONTH <br> ON YOUR ENERGY BILL</p> 
+						<p class = "serviceDescription">Fusce et orci leo. Nulla condimentum <br> et magna sit amet rhoncus. [..] </p>
+						<div id = "rectangleReadMore"> <p> Read More</p></div>
+					</div>
+					
+				</div>
+			</div>
+			
+		<div class = "container">
+				<p id = "aboutTitle"> About Us </p>
+				<p class = "par"> We are Northern California’s premiere local home security and automation provider. 
+					We firmly believe in giving the residents of our communities the best protection, and 
+					we pride ourselves in providing top-quality equipment, prompt response from expert technicians, 
+					and courteous customer service. As our customers you are not just a number—you are members 
+					of the same community that we live in; we are your neighbors. We will never cut corners to 
+					save time or money. You will receive excellent service year after year to give you the safety 
+					and peace of mind you want and deserve.</p>
+				<p class = "par"> At V3 Security, we pride ourselves on being Northern California’s premier home security and home 
+					automation providers. We know that your family’s home and safety is unbelievably important to you, 
+					and because you’re a part of our local family, it’s important to us as well.</p>
+			</div>
+		</div>
+		<!-- INFO FIN -->
+		
+		<!-- CLIENTS -->
+		<div id = "rectangleClients"> <p> Our Clients Say </p> </div>
+		<div class = "clientsContainer">
+			<div class = "container">
+				<div class="row">
+					<div class="col-sm-6 left">
+						<div class = "rectangleDialog"> 
+							<img src = "clients/rectangleDialog.png">
+							<p class = "centered" > Vestibulum malesuada hendrerit odio, ut tristique magna 
+							                        pretium vel. Integer metus lectus,[..] </p>
+						</div>
+
+						<div class = "customerInfo"> 
+							<div class="row">
+								<div class="col-sm-8 client">
+									<img src = "clients/photo1.png"  alt = "photo">
+									<p class = "name">Alice Knight - Client</p>
+								</div>
+								<div class="col-sm-4 star">
+										<img src = "clients/fullstar.png"  alt = "icon">
+										<img src = "clients/fullstar.png"  alt = "icon">
+										<img src = "clients/fullstar.png"  alt = "icon">
+										<img src = "clients/emptystar.png"  alt = "icon">
+										<img src = "clients/emptystar.png" alt = "icon">
+								</div>
+							</div>
+						</div>
+						
+						<div class = "rectangleDialog"> 
+							<img src = "clients/rectangleDialog.png">
+							<p class = "centered" > Nullam ut facilisis justo. Ut tempus porta urna a accumsan. 
+													Praesent sollicitudin augue nib [..]  </p>
+						</div>
+						
+						<div class = "customerInfo"> 
+							<div class="row">
+								<div class="col-sm-8 client">
+									<img src = "clients/photo2.png"  alt = "photo">
+									<p class = "name">John Smith - Client</p>
+								</div>
+								<div class="col-sm-4 star">
+										<img src = "clients/fullstar.png"  alt = "icon">
+										<img src = "clients/fullstar.png"  alt = "icon">
+										<img src = "clients/fullstar.png"  alt = "icon">
+										<img src = "clients/fullstar.png"  alt = "icon">
+										<img src = "clients/emptystar.png" alt = "icon">
+								</div>
+							</div>
+						</div>
+						
+						<div id = "viewAll">
+							<p id = "viewTxt">VIEW ALL</p>
+							<p id = "viewBtn">></p>
+						</div>
+						
+					</div>
+					<div class="col-sm-6">
+						<div id = "video"></div>
+						<h3>Watch Our Video</h3>
+						<p>Suspendisse vulputate porta mi, non interdum metus tempus quis. Donec gravida, 
+						   tortor aliquet consequat sagittis, diam arcu mattis dolor, a pellentesque 
+						   neque nisi eu ante. Suspendisse luctus justo ac aliquam porta. Integer 
+						   fermentum nisl mauris, eu commodo est rhoncus nec. 
+						   Integer lectus tellus,  [...]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- CLIENTS FIN -->
+	</body>
+</html>

@@ -1,0 +1,100 @@
+.infoContainer {
+	width: 100%;
+	height: 540px;
+	background: url(rectangleInfo.png);
+	/*NU UITA SA O FACI 1PX ALBA*/
+	border: 1px white solid;
+}
+	
+.container {
+	margin: 15px 0px 22px 0px;
+}
+
+.about {
+	text-align: center;
+	margin: 29px auto;
+	/*border: 2px green solid;*/
+	width: 1020px;
+}
+
+#aboutTitle {
+	font-size: 30px;
+	font-family: 'Maven Pro';
+	text-align: center;
+	color: #7c7c7c;
+}
+	
+.par {
+	text-align: center;
+	font-family: 'Maven Pro';
+	font-size: 16px;
+	color: #848484;
+}
+	
+.elipse {
+	margin: auto;
+	border-radius: 50%;
+	background-color:  #404041;
+	width: 90px;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+		
+.icon {
+	margin: 0;
+}
+	
+.serviceDescription {
+	margin: -8px 0px 0px 0px;
+	height: 33px;
+	font-family: 'Maven Pro';
+	color: #848484;
+	font-size: 14px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.serviceTitle {
+	height: 71px;
+	color: rgb(37, 191, 236);
+	font-family: 'Maven Pro';
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.readmore {
+	height: 32px;
+	font-family: 'Maven Pro';
+	font-weight: bold;
+	font-size: 16px;
+	margin: 23px 0px 0px 0px;
+}
+
+#rectangleReadMore {
+	width: 136px;
+	height: 56px;
+	background: url(info/rectangleReadMore.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: flex;
+	align-items: center;
+}
+
+#rectangleReadMore p {
+	color: #adadad;
+	cursor: pointer;
+	padding-top: 27px;
+	padding-left: 20px;
+	font-size: 16px;
+	font-family: 'Maven Pro';
+	text-transform: uppercase;
+}			
