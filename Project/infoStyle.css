@@ -71,12 +71,10 @@
 	justify-content: center;
 }
 
-.readmore {
-	height: 32px;
-	font-family: 'Maven Pro';
-	font-weight: bold;
-	font-size: 16px;
-	margin: 23px 0px 0px 0px;
+#centerRectangleReadMore {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #rectangleReadMore {

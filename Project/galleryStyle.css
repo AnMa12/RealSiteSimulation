@@ -56,24 +56,46 @@
 	font-size: 30px;
 	padding-left: 37px;
 	padding-top: 34px;	
+	margin-bottom: 0px;
+	color: white;
+}
+
+#titleBlueBottom {
+	font-weight: 600;
+	font-weight: bold;
+	font-family: 'Maven Pro';
+	font-size: 30px;
+	padding-left: 37px;
+	margin-top: -10px;	
 	color: white;
 }
 
 #textBlue {	
 	padding-left: 37px;
-	padding-top: 10px;
 	padding-right: 40px;
+	padding-bottom: 9px;
 	font-size: 15px;
 	font-family: 'Maven Pro';
 	color: white;	
+}
+
+#rectangleGetQuote {
+	width: 218px;
+	height: 58px;
+	
+	background: url(gallery/rectangleGetQuote.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin-left: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #buttonBlue {
 	font-family: 'Maven Pro';
 	color: white;
 	font-weight: bold;
-	font-size: 16px;
-	padding-left: 37px;
-	padding-top: 29px;	
+	font-size: 18px;
 }
 /* -- Galery fin -- */
