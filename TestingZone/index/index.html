@@ -1,29 +1,144 @@
-<html>
+﻿<html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<style>
+
+		
+		.clientsContainer {
+			width: 100%;
+			height: 575px;
+			border: 2px red solid;
+		}
+		
+		.infoContainer {
+			width: 100%;
+			height: 540px;
+			background: url(rectangleInfo.png);
+			/*NU UITA SA O FACI 1PX ALBA*/
+			border: 2px green solid;
+		}
+	
+		.container {
+			margin: 15px 0px 22px 0px;
+		}
+		
+		.about {
+			text-align: center;
+			margin: 29px auto;
+			/*border: 2px green solid;*/
+			font-size: 16pt;
+			width: 1020px;
+		}
+		
+		#aboutTitle {
+			font-size: 23pt;
+			text-align: center;
+		}
+		
+		.par {
+			text-align: center;
+		}
+		
+		.elipse {
+			margin: auto;
+			border-radius: 50%;
+			background-color:  #404041;
+			width: 90px;
+			height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.icon {
+			margin: 0;
+		}
+	
+		.serviceDescription {
+			margin: -8px 0px 0px 0px;
+			height: 33px;
+			font-size: 16 pt;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.serviceTitle {
+			height: 71px;
+			font-size: 18.16 pt;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.readmore {
+			height: 32px;
+			margin: 23px 0px 0px 0px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+
+		</style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 	
 	<body>
 		
-		<div class = "containerMenu">
-			<img id = "rectangleMenu" src="menu.png" alt="menu">
-			<img id = "iconV3" src="v3securityIcon.png" alt="v3securityIcon">
-			<img id = "iconBBB" src="bbbIcon.png" alt="bbbIcon">
-			<img id = "rectanglePhone"src="phonenumberBackground.png" alt="phonenumberBackground">
-			<img id = "rectangleQuote" src="freequoteBackground.png" alt="freequoteBackground">
+		<div class = "infoContainer">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md">
+						<div class = "elipse">
+							<img class = "icon" src = "settingsIcon.png" alt = "elipseIcon">
+						</div>
+						<p class = "serviceTitle">EASY TO USE EQUIPMENT</p> 
+						<p class = "serviceDescription">Pellentesque dignissim mi non ipsum vulputatultrices justo euismod. [..] </p>
+						<p class = "readmore">READ MORE ></p>
+					</div>
+					
+					<div class="col-md">
+						<div class = "elipse">
+							<img class = "icon" src = "phoneIcon.png" alt = "elipseIcon">
+						</div>
+						<p class = "serviceTitle">A SYSTEM YOU'LL ACTYALY USE</p>
+						<p class = "serviceDescription">Suspendisse vulputate porta mi, non <br> interdum metus tempus quis. [...] </p>					
+						<p class = "readmore">READ MORE ></p>
+					</div>
+					
+					<div class="col-md">
+						<div class = "elipse">
+							<img class = "icon" src = "newsIcon.png" alt = "elipseIcon">
+						</div>
+						<p class = "serviceTitle"> SAVE UP TO $20 A MONTH <br> ON YOUR ENERGY BILL</p> 
+						<p class = "serviceDescription">Fusce et orci leo. Nulla condimentum <br> et magna sit amet rhoncus. [..] </p>
+						<p class = "readmore">READ MORE ></p>
+					</div>
+					
+				</div>
+			</div>
+			
+		<div class = "container">
+				<p id = "aboutTitle"> About Us </p>
+				<p class = "par"> We are Northern California’s premiere local home security and automation provider. 
+					We firmly believe in giving the residents of our communities the best protection, and 
+					we pride ourselves in providing top-quality equipment, prompt response from expert technicians, 
+					and courteous customer service. As our customers you are not just a number—you are members 
+					of the same community that we live in; we are your neighbors. We will never cut corners to 
+					save time or money. You will receive excellent service year after year to give you the safety 
+					and peace of mind you want and deserve.</p>
+				<p class = "par"> At V3 Security, we pride ourselves on being Northern California’s premier home security and home 
+					automation providers. We know that your family’s home and safety is unbelievably important to you, 
+					and because you’re a part of our local family, it’s important to us as well.</p>
+			</div>
 		</div>
-		
-		<div class = "containerImage">
-			<img id = "rectangleImage" src = "Rectangle2.png" alt = "rectangle">
-		</div>
-		
-		<div class = "containerInfo">
-			<img id = "rectangleInfo" src = "Rectangle4.png" alt = "rectangle">
-		</div>
-		
-		<div class = "containerClients">
-			<img id = "rectangleClients" src = "Rectangle4-clients.png" alt = "rectangle">
-		</div>
-		
+	
 	</body>
 </html>
