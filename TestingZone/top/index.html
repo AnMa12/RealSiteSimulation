@@ -49,7 +49,7 @@
 				
 				margin-left: -100px;
 				
-				background: url(freequoteBackground.png);
+				background: url(menu/freequoteBackground.png);
 				background-repeat: no-repeat;
 				background-size: auto;
 				
@@ -63,7 +63,7 @@
 				height: 38px;
 				width: 260px;
 				
-				background: url(phonenumberBackground.png);
+				background: url(menu/phonenumberBackground.png);
 				background-repeat: no-repeat;
 				background-size: auto;
 				
@@ -133,8 +133,46 @@
 			}
 			/* --- Menu fin --- */
 			
-			
-			
+			/* --- Galery --- */
+			.slideshow-container {
+			  background-color: black;
+			  position: relative;
+			  margin: auto;
+			}
+
+			.text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 24px;
+			  width: 100%;
+			  text-align: center;
+			}
+
+			.active {
+				background-color: rgb(0,186,233);
+			}
+
+			.dot {
+			  cursor: pointer;
+			  height: 27px;
+			  width: 27px;
+			  margin: 0 4px;
+			  border: 1px white solid;
+			  border-radius: 10%;
+			  display: inline-block;
+			}
+
+			#rectangleBlue {
+				position: absolute;
+				z-index: 900;
+				left: 19.1%;
+				top: 15.8%;
+				width: 31.8%;
+				height: 31.7%;
+			}
+			/* -- Galery fin -- */
 		</style>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
@@ -147,9 +185,9 @@
 	<body>
 		
 		<div class = "containerMenu">
-			<img id = "rectangleMenu" src="menu.png" alt="menu">
-			<img id = "iconV3" src="v3securityIcon.png" alt="v3securityIcon">
-			<img id = "iconBBB" src="bbbIcon.png" alt="bbbIcon">
+			<img id = "rectangleMenu" src="menu/menu.png" alt="menu">
+			<img id = "iconV3" src="menu/v3securityIcon.png" alt="v3securityIcon">
+			<img id = "iconBBB" src="menu/bbbIcon.png" alt="bbbIcon">
 			
 			<div class = "containerContact">
 				<div id = "rectanglePhone"> 
@@ -170,12 +208,64 @@
 			</ul>  
 		</div>
 		
+		<img id = "rectangleBlue" src = "gallery/rectangleBlue.png">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="gallery/photoG1.png" style="width:100%">
+				<div class="text">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+		</div>
+
+			<div class="mySlides fade">
+				<img src="gallery/photoG2.png" style="width:100%">
+				<div class="text">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="gallery/photoG3.png" style="width:100%">
+				<div class="text">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+			</div>
+		</div>
 		
-		
-		
-		
-		
-		
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>		
 		
 	</body>
 </html>
