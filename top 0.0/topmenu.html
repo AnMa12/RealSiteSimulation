@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			body {
+				background-color: green;
+				margin: 0;
+			}
+			
+			.containerContact {
+				border: 1px solid blue;
+				display: flex;
+			}
+			
+			#rectangleQuote {
+				top: 0;
+				height: 38px;
+				width: 260px;
+				
+				margin-left: -100px;
+				
+				background: url(freequoteBackground.png);
+				background-repeat: no-repeat;
+				background-size: auto;
+				
+				display: flex;
+				align-items: center;
+				/*border: 1px solid red;*/
+			}
+			
+			#rectanglePhone {
+				top: 0;
+				height: 38px;
+				width: 260px;
+				
+				background: url(phonenumberBackground.png);
+				background-repeat: no-repeat;
+				background-size: auto;
+				
+				display: flex;
+				align-items: center;
+				/*border: 1px solid red;*/
+			}
+			
+			#rectangleQuote p {
+				padding-top: 10px;
+				padding-left: 38px;
+				font-size: 18px;
+				font-family: 'Maven Pro';
+				text-transform: uppercase;
+				font-weight: bold;
+				color: white;
+			}
+			
+			#rectangleQuote p span {
+				font-size: 13px;
+			}
+			
+			#rectanglePhone p span {
+				font-size: 16px;
+			}
+			
+			#rectanglePhone p {
+				padding-top: 10px;
+				padding-left: 28px;
+				font-size: 18px;
+				font-family: 'Maven Pro';
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #737373;
+			}
+			
+			
+			
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class = "containerContact">
+			<div id = "rectanglePhone"> <p> <span class="glyphicon glyphicon-earphone"></span> 916.543.1543 </p> </div>
+			<div id = "rectangleQuote"> <p> Get a free quote <span class="glyphicon glyphicon-chevron-down"></span> </p> </div>
+		</div>
+		
+	</body>
+</html>
