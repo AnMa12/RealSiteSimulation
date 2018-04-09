@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+	.slideshowContainer {
+	  position: relative;
+	  margin: auto;
+	}
+
+	.dotsDiv {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 24px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	.active {
+		background-color: rgb(0,186,233);
+	}
+
+	.dotSlide {
+	  cursor: pointer;
+	  height: 27px;
+	  width: 27px;
+	  margin: 0 4px;
+	  border: 1px white solid;
+	  border-radius: 10%;
+	  display: inline-block;
+	}
+
+	#rectangleBlue {
+		position: absolute;
+		z-index: 900;
+		background: url("rectangleBlue.png");
+		background-repeat: no-repeat;
+		background-size: auto;
+		left: 19.1%;
+		top: 15.8%;
+		width: 522px;
+		height: 312px;
+	}
+	
+	#titleBlue {
+		font-weight: 600;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: 'Maven Pro';
+	}
+
+</style>
+</head>
+<body>
+	
+	<div id = "rectangleBlue">
+		<p id = "titleBlue"> We are your <br> Neighbors </p>
+		<p> Fusce et orci leo. Nulla condimentum et magna sit amet rhoncus. 
+			Pellentesque dignissim mi non ipsum Suspendisse vulputate porta mi, 
+			non interdum metus tempus quis. Donec gravida, tortor aliquet consequat sagittis[...]</p>
+		<p> GET A FREE QUOTE </p>
+	</div>
+
+	<div class="slideshowContainer">
+		<div class="slidesDiv">
+			<img src="photoG1.png" style="width:100%">
+			<div class="dotsDiv">
+				<span class="dotSlide" onclick="currentSlide(1)"></span> 
+				<span class="dotSlide" onclick="currentSlide(2)"></span> 
+				<span class="dotSlide" onclick="currentSlide(3)"></span> 
+			</div>
+	</div>
+
+		<div class="slidesDiv">
+			<img src="photoG2.png" style="width:100%">
+			<div class="dotsDiv">
+				<span class="dotSlide" onclick="currentSlide(1)"></span> 
+				<span class="dotSlide" onclick="currentSlide(2)"></span> 
+				<span class="dotSlide" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+
+		<div class="slidesDiv">
+			<img src="photoG3.png" style="width:100%">
+			<div class="dotsDiv">
+				<span class="dotSlide" onclick="currentSlide(1)"></span> 
+				<span class="dotSlide" onclick="currentSlide(2)"></span> 
+				<span class="dotSlide" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("slidesDiv");
+	  var dots = document.getElementsByClassName("dotSlide");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+
+</body>
+</html> 
