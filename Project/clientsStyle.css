@@ -140,6 +140,9 @@
 
 #videoText {
 	font-family: 'Maven Pro';
+	text-align: justify;
+    text-justify: inter-word;
+	-moz-text-align-last: center; /* Code for Firefox */
 	color: #848484;
 	width: 460px;
 	font-size: 14px;
