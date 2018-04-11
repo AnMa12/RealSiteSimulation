@@ -40,6 +40,7 @@ body {
 }
 
 #rectangleQuote {
+	cursor: pointer;
 	top: 0;
 	height: 38px;
 	width: 260px;
@@ -56,6 +57,7 @@ body {
 }
 
 #rectanglePhone {
+	cursor: pointer;
 	top: 0;
 	height: 38px;
 	width: 260px;

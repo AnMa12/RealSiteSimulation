@@ -28,7 +28,8 @@
 }
 	
 .par {
-	text-align: justify center;
+	text-align: justify;
+    text-justify: inter-word;
 	-moz-text-align-last: center; /* Code for Firefox */
     text-align-last: center;
 	font-family: 'Maven Pro';
