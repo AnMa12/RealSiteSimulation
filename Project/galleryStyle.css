@@ -14,18 +14,12 @@
 }
 
 .dotsDiv {
-	color: #f2f2f2;
 	font-size: 15px;
-	padding: 8px 9px;
 	position: absolute;
-	bottom: 8px;
 	width: 100%;
 	text-align: center;
+	top: 625px;
 }
-
-.active {
-	background-color: rgb(0,186,233);
-	}
 
 .dotSlide {
 	cursor: pointer;
@@ -35,6 +29,10 @@
     border: 1px white solid;
     border-radius: 10%;
 	display: inline-block;
+}
+
+.active {
+	background-color: rgb(37, 191, 236);
 }
 
 #rectangleBlue {
